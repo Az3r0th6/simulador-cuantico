@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -26,7 +28,7 @@
                     <div class="qubit-face">Q</div>
                     <div class="glow"></div>
                 </div>
-                
+
                 <div id="result-display" class="hidden">
                     <p id="qubit-status">🌀 El Qubit está girando... Es 0 y 1 al mismo tiempo.</p>
                     <div class="loading-dots" id="loading-dots">
@@ -50,9 +52,14 @@
         </main>
 
         <footer>
-            <p class="copyright">© 2026 Simulador Cuántico | Desarrollado por <a href="https://github.com/Az3r0th6" target="_blank" class="dev-link">Az3r0th6</a></p>
+            <p class="copyright">© <span id="year"></span> Desarrollado por Martin Calvo Ruiz</p>
+
+            <script>
+                document.getElementById("year").textContent = new Date().getFullYear();
+            </script>
         </footer>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
