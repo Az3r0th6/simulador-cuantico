@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Cuántico | Lanzamiento de Qubit</title>
+    <meta name="description" content="Simulación interactiva de un Qubit por el Día Mundial de la Física Cuántica.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Simulador Cuántico</h1>
+            <p class="subtitle">Día Mundial de la Física Cuántica</p>
+        </header>
+
+        <main>
+            <div class="info-panel">
+                <p><strong>14 de Abril: Día de la Física Cuántica 🌌</strong></p>
+                <p>Dato curioso: Se celebra hoy en honor a la constante de Planck <i>(h ≈ 4.14 × 10⁻¹⁵ eV·s)</i>.</p>
+            </div>
+
+            <div class="experiment-area">
+                <div id="qubit" class="qubit-idle">
+                    <div class="qubit-face">Q</div>
+                    <div class="glow"></div>
+                </div>
+                
+                <div id="result-display" class="hidden">
+                    <p id="qubit-status">🌀 El Qubit está girando... Es 0 y 1 al mismo tiempo.</p>
+                    <div class="loading-dots" id="loading-dots">
+                        <span>.</span><span>.</span><span>.</span>
+                    </div>
+                    <h2 id="qubit-result" class="hidden">Cara (0)</h2>
+                    <blockquote id="quote" class="hidden">
+                        "Si crees que entiendes la mecánica cuántica, es que no la entiendes."<br>
+                        <strong>- Richard Feynman</strong>
+                    </blockquote>
+                </div>
+            </div>
+
+            <button id="launch-btn" class="primary-btn">
+                <span class="btn-text">Lanzar Qubit (Superposición)</span>
+                <span class="btn-glow"></span>
+            </button>
+            <button id="reset-btn" class="secondary-btn hidden">
+                Colapsar otro Qubit
+            </button>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
