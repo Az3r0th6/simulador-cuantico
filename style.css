@@ -293,3 +293,25 @@ button {
     0% { opacity: 0.3; }
     100% { opacity: 1; }
 }
+
+/* Footer & Copyright */
+footer {
+    margin-top: 1rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+    color: rgba(148, 163, 184, 0.7);
+    letter-spacing: 0.5px;
+}
+
+.dev-link {
+    color: var(--quantum-glow);
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.dev-link:hover {
+    color: var(--quantum-glow-alt);
+    text-shadow: 0 0 10px rgba(213, 0, 249, 0.5);
+}
